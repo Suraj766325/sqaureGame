@@ -4,7 +4,7 @@ let c=document.getElementById("b3");
 let d=document.getElementById("b4");
 
 
-a.addEventListener("mouseenter",function(){
+a.addEventListener("click",function(){
     a.innerHTML=`<h1>${Math.ceil(100*Math.random())}</h1>`;
 })
 a.addEventListener("mouseleave",function(){
@@ -12,7 +12,7 @@ a.addEventListener("mouseleave",function(){
 })
 
 let clr="red";
-b.addEventListener("mouseenter",function(){
+b.addEventListener("click",function(){
     if(clr=="red"){
         b.style.backgroundColor="green";
         clr="green";
@@ -29,7 +29,7 @@ b.addEventListener("mouseleave",function(){
 
 
 // rgb(a,b,c) where a,b,c lies between 0 10 250
-c.addEventListener("mouseenter",function(){
+c.addEventListener("click",function(){
     let r1=Math.floor(256*Math.random());
     let r2=Math.floor(256*Math.random());
     let r3=Math.floor(256*Math.random());
